@@ -1,0 +1,8 @@
+<div class="quote-container">
+  @if (currentQuote(); as quote) {
+    <div class="quote">"{{ quote.data.content }}"</div>
+    <div class="author">- {{ quote.data.author }}</div>
+  } @else {
+    Chargement…
+  }
+</div>

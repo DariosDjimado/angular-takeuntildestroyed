@@ -1,0 +1,11 @@
+<button (click)="toggleQuote()">
+  @if (showQuote()) {
+    Arrêter les citations
+  } @else {
+    Commenter les citations
+  }
+</button>
+
+@if (showQuote()) {
+  <app-quote />
+}
